@@ -6,6 +6,11 @@ public class Party : IEnumerable<Character>
 {
     private List<Character> _characters;
 
+    public Party()
+    {
+        _characters = new List<Character>();
+    }
+
     public void AddCharacter(Character character)
     {
         _characters.Add(character);

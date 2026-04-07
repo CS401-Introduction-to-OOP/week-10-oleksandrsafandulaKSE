@@ -5,6 +5,11 @@ namespace week_10_oleksandrsafandulaKSE;
 public class EventLog : IEnumerable<Event>
 {
     private List<Event> _events;
+
+    public EventLog()
+    {
+        _events = new List<Event>();
+    }
     
     public void AddEvent(Event evenT)
     {
